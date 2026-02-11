@@ -18,7 +18,7 @@ public class Main extends Application {
 
         // ===== ROOT LAYOUT =====
         BorderPane root = new BorderPane();
-        Scene scene = new Scene(root, 600, 600, Color.SKYBLUE);
+        Scene scene = new Scene(root, 600, 600, Color.BLACK);
 
         // ===== TITLE =====
         Text title = new Text("Welcome to my Java Game Engine!");
@@ -64,6 +64,13 @@ public class Main extends Application {
             mapSelector.show(primaryStage);
         });
 
+        //Styling-----
+        newGameBtn.setStyle("-fx-background-color: #3c3f41; -fx-text-fill: #f0f0f0;");
+        loadGameBtn.setStyle("-fx-background-color: #3c3f41; -fx-text-fill: #f0f0f0;");
+        mapLabel.setTextFill(Color.web("#f0f0f0"));
+        mapField.setStyle("-fx-background-color: #ffffff; -fx-text-fill: #000000;");
+        title.setFill(Color.web("#ffffff"));
+        root.setStyle("-fx-background-color: #3c3f41; -fx-text-fill: #f0f0f0;");
 
         // ===== SHOW WINDOW =====
         primaryStage.setTitle("Java Game Engine");
